@@ -30,7 +30,7 @@
       output = "S2+C17+VEN2,S6+WE+S2";
     } else if (input.includes("diarrhea")) {
       output = "C10+S10, VER1+WE";
-    } else if (input.includes("Abdomin")) {
+    } else if (input.includes("abdomin")) {
       output = "Abdominal pain.C10+S10,VER1+WE";
     } else if (input.includes("Heart")) {
       output = "Heart burm.S1+L1+A3,VER1+S10+C10,SLASS+A3,";
@@ -60,7 +60,7 @@
       output = "A1+S6+C2,C6+L2+RE+BE";
     } else if (input.includes("kidney")) {
       output = "C17+LI+SI,S6+C6+WE";
-    } else if (input.includes("Jaundice")) {
+    } else if (input.includes("jaundice")) {
       output = "S2+S5+C5,F1+S10+WE";
     } else if (input.includes("eye")) {
       output = "S12+C5+BE+YE+APP";
@@ -97,7 +97,7 @@
       output = "S1+C5+L1,VER1+C1+P1+F1";
     } else if (input.includes("cholera")) {
       output = "S1+WE+S-LASS+C15,S10+A3+LI ,S5+F1+VER+YE";
-    } else if (input.includes("Cancer")) {
+    } else if (input.includes("cancer")) {
       output = "S1+WE+Ven1,A2+C1+L1,VER1+P1+F1";
     } else if (input.includes("blood")) {
       output = "A1+C13+S1,VER2+L1+A2+GE";
@@ -312,10 +312,12 @@
 
   // Add a click event listener to the button
   document.getElementById("button").addEventListener("click", sendMessage);
-
+ 
   // Add a keypress event listener to the input
   document.getElementById("input").addEventListener("keypress", function(event) {
     if (event.keyCode == 13) {
       sendMessage();
     }
   });
+
+ 
