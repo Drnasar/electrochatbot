@@ -128,4 +128,11 @@ button i{
     background: #bcbdc0;
     border-radius: 10px;
 }
+
+@media (max-width:500px) {
+
+  .container{
+    background-color: #1e1f1f;
+    
+  }
   
